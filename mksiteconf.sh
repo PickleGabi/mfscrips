@@ -7,7 +7,7 @@ cat > /etc/apache2/sites-available/$REPLY.com.conf <<EOF
     # The primary domain for this host
     ServerName $REPLY.com
     # Optionally have other subdomains also managed by this Virtual Host
-    ServerAlias $REPLY.com *.$REPLY.com
+    ServerAlias www.$REPLY.com *.$REPLY.com
     DocumentRoot /var/www/html/$REPLY.com/public_html
     ErrorLog /var/www/html/$REPLY.com/logs/error.log
     CustomLog /var/www/html/$REPLY.com/logs/access.log combined
