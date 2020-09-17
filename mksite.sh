@@ -6,4 +6,5 @@ read
 mkdir -p /var/www/html/$REPLY/{public_html,logs}
 cp -R /var/www/html/src/wordpress/* /var/www/html/$REPLY/public_html
 chown -R www-data:www-data /var/www/html/$REPLY
+chmod -R 755 /var/www/html/$REPLY/public_html
 ls -l /var/www/html/$REPLY/public_html
